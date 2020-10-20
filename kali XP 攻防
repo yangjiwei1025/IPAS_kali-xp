@@ -1,0 +1,27 @@
+##  首先確認網段中有那些系統  //所謂知己知彼 先知道短段中有那些電腦 並且知道有哪些IP位置
+
+ ifconfig 指令   確認自己的IP
+ 
+## 確認網段中有那些開啟的(LIVE)機器
+
+  netdiscover -r IP(自己的)        產生RANGE整合同網段中活著的伺服器                            """ netdiscover -h可查詢所有netdiscover指令"""
+
+## 接下來查詢對方的作業系統 是甚麼版本
+
+  nmap -O IP(對方的)   得知對方作業系統 利用作業系統的漏洞 可以更方便入侵      """常用的nmap掃描  nmap -O -p -sP     -o作業系統掃描   -P埠口掃描  -sP ping掃描""""
+
+## 確認是否存在漏洞(單一漏洞掃描) 
+
+     nmap 兩大技術 一般掃描  :  NSE（ Nmap Scripting engine）
+
+  例如查詢到對方的作業系統是WINDOWS XP 可以用的方法
+    1,上網站CVE找
+    2,google hacking
+    3,到KALI官網找
+    4,上nmap的官方找
+    5,直接用nmap -
+     nmap(指令){https://www.itread01.com/content/1549490595.html}
+
+
+
+
