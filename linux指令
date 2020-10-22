@@ -1,1 +1,8 @@
 
+root@kali:~# md5sum test.txt
+cff1597f4615e97569e34b6a983e1b17  test.txt
+root@kali:~# gedit test.txt
+root@kali:~# md5sum test.txt
+fab9a9ff3659f23619590f189fcbc69a  test.txt
+root@kali:~# ^C
+root@kali:~# 
