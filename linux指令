@@ -1,0 +1,16 @@
+
+##linux md5sum 測試 (不安全)
+```
+
+  root@kali:~# sha256
+  bash: sha256: command not found
+  root@kali:~# gedit test.txt
+  root@kali:~# cat test.txt
+  md5sum
+
+  efiushdfljaldkhflsjdf
+  root@kali:~# md5sum test.txt
+  fab9a9ff3659f23619590f189fcbc69a  test.txt
+  
+  32*4 bits = 128 bits
+```
